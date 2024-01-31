@@ -10,7 +10,7 @@ namespace Lab3App
             Description = name;
 
         }
-        private void DoAction()
+        public override void DoAction()
         {
             Console.WriteLine("MagicWand is Used");
         }
@@ -20,8 +20,6 @@ namespace Lab3App
         }
         public override void AddMe(List<Collectable> list)
         {
-            Console.WriteLine($"{Description} Collected, Congrats!!!!");
-            DoAction();
             base.AddMe(list);
         }
     }

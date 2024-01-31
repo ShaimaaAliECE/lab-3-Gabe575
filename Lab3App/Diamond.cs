@@ -10,12 +10,6 @@ namespace Lab3App
         {
             Description = name;
             this.score = score;
-
-        }
-        private void UpdateTotalValue()
-        {
-            Console.WriteLine($"{Description} Collected, Congrats!!!!");
-            CollectionBoard.TotalScore += score;
         }
         public override void Display()
         {
@@ -23,7 +17,6 @@ namespace Lab3App
         }
         public override void AddMe(List<Collectable> list)
         {
-            UpdateTotalValue();
             base.AddMe(list);
         }
     }

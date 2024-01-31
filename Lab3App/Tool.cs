@@ -9,14 +9,12 @@ namespace Lab3App
         {
 
         }
-        private void DoAction()
-        {
-            
-        }
+        public abstract void DoAction();
+
         public override void AddMe(List<Collectable> list)
         {
-            DoAction();
             base.AddMe(list);
+            DoAction();
         }
     }
 }

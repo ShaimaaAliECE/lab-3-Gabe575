@@ -8,9 +8,8 @@ namespace Lab3App
         public Axe(String name) : base(name)
         {
             Description = name;
-
         }
-        private void DoAction()
+        public override void DoAction()
         {
             Console.WriteLine("Axe is Used");
         }
@@ -20,8 +19,6 @@ namespace Lab3App
         }
         public override void AddMe(List<Collectable> list)
         {
-            Console.WriteLine($"{Description} Collected, Congrats!!!!");
-            DoAction();
             base.AddMe(list);
         }
     }

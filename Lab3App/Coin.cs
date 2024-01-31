@@ -17,9 +17,7 @@ namespace Lab3App
         }
         private void UpdateTotalValue()
         {
-            Console.WriteLine($"{Description} Collected, Congrats!!!!");
             CollectionBoard.TotalValue += Value;
-            CollectionBoard.TotalScore += score;
         }
         public override void Display()
         {
